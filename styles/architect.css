@@ -1,6 +1,6 @@
-<style>
+/*work sans font*/
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Work+Sans:ital,wght@0,500;0,600;0,700;1,400;1,800&display=swap');
-</style>
+
 font-family: 'Lato', sans-serif;
 font-family: 'Work Sans', sans-serif;
 .btn-primary{
@@ -35,9 +35,12 @@ nav > ul{
 nav li{
     list-style:none;
     margin-right:30px;
+    font-weight: 500;
+    font-size: 1 rem;
 }
 nav li a{
-
+text-decoration: none;
+color: #424242;
 }
 .banner-content{
     max-width:800px;
@@ -52,7 +55,7 @@ nav li a{
 .banner-description{
     color: #727272;
 }
-.banner-img{
+.banner img{
     margin-top: 20px;
     width:100%;
 }
@@ -72,8 +75,39 @@ nav li a{
 
     }
     nav{
-        flex-direction: columnborder-radius: 8px;
+        flex-direction: column;
+        border-radius: 8px;
         background: #FF900E;;
     }
     
+}
+/*main styles*/
+main{
+max-width:1440px;
+margin:0 auto;
+}
+/*teams style*/
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:1.5rem;
+}
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.teams-title{
+    font-size:2.8rem;
+}
+.teams-title.quick-list{
+    color:#727272;
+    font-weight: 500;
+}
+.teams-title .text-features{
+    color:#FF900E;
+    font-weight: 700;
 }
